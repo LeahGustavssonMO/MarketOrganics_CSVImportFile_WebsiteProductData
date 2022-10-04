@@ -57,7 +57,8 @@ class connectingToDB {
         ResultSet rs = st.executeQuery(sqlStr);
         while (rs.next()) {
             System.out.println(rs.getString("Barcode") +
-                   "," + rs.getString("StockCode"));
+                   "," + rs.getString("StockCode") +
+                    "," + rs.getString("Name"));
         }
     }
 }
